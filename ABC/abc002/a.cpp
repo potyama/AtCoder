@@ -1,8 +1,13 @@
 #include <iostream>
+using namespace std;
 
 int main(){
-      int a,b;
+      int X,Y;
+      cin >> X >> Y;
 
-      std::cin >> a >> b;
-      std::cout << (a > b? a:b) << std::endl;
+      if(X <= Y){
+            cout << Y << endl;
+      }else{
+            cout << X << endl;
+      }
 }

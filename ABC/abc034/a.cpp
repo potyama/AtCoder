@@ -6,5 +6,5 @@ int main(){
 
       cin >> x >> y;
 
-      cout << y/x << endl;
+      cout << (x<y?"Better":"Worse");
 }

@@ -6,5 +6,5 @@ int main(){
 
       cin >> N;
 
-      cout << N * 2 << endl;
+      cout << (N == 12?1:N+1) << endl;
 }

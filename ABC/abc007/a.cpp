@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-      int N;
+      int n;
 
-      cin >> N;
+      cin >> n;
 
-      cout << N * 2 << endl;
+      cout << n-1 << endl;
 }

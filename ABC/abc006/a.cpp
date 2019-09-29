@@ -6,5 +6,5 @@ int main(){
 
       cin >> N;
 
-      cout << N * 2 << endl;
+      cout << (N%3 == 0 ? "YES":"NO") << endl;
 }
