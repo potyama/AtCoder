@@ -6,5 +6,4 @@ int main(){
       cin >> H >> J;
 
       cout << H - J << endl;
-
  }
