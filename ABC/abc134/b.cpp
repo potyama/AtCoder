@@ -2,17 +2,8 @@
 using namespace std;
 
 int main(){
-      int N,D,ans=1,A,X,i=1;
-      cin >> N >> D;
+      int N,D;cin >> N >> D;
+      int ans = (N+D*2)/((D*2)+1);
 
-      X = N /2;
-      A = (X + D) - (X - D);
-      N-=A;
-
-      while(N> 0){
-            N-=(A-i);
-            ans++;
-            i++;
-      }
       cout << ans << endl;
 }
