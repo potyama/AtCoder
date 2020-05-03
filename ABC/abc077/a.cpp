@@ -2,15 +2,16 @@
 #include <string>
 #include <algorithm>
 #include <vector>
-#include <cmath>
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
 #define ll long long
 using namespace std;
 
 int main(){
-	int N,M;cin >> N >> M;
-
-	cout << (N+M+1)/2 << endl;
-	
+	string N,S;cin >> N >> S;
+	if(N[0] == S[2] && S[0] == N[2] && N[1] == S[1]){
+		cout << "YES" << endl;
+	}else{
+		cout << "NO" << endl;
+	}
 }
 

@@ -2,15 +2,17 @@
 #include <string>
 #include <algorithm>
 #include <vector>
-#include <cmath>
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
 #define ll long long
 using namespace std;
 
 int main(){
-	int N,M;cin >> N >> M;
+	string S;cin >> S;
 
-	cout << (N+M+1)/2 << endl;
-	
+	ll len = S.length();
+
+	if(len <= 3){
+		cout << 0 << endl;
+	}
 }
 

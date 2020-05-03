@@ -1,16 +1,22 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-#include <vector>
-#include <cmath>
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
 #define ll long long
 using namespace std;
 
 int main(){
-	int N,M;cin >> N >> M;
+	ll N,M;cin >> N>>M;
+	ll ans = N;
 
-	cout << (N+M+1)/2 << endl;
-	
+	for(int i=0;i<M;i++){
+		ll A;cin >> A;
+		ans -= A;
+	}
+	if(ans < 0){
+		cout << -1 << endl;
+	}else{
+		cout << ans << endl;
+	}
 }
 
