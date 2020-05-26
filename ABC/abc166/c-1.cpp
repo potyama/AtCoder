@@ -28,8 +28,27 @@ int main(){
 	cin.tie(0);
 	ios::sync_with_stdio(false);
 
-	int N;cin >> N;
+	int n,m;cin >> n >> m;
+	int h[100010];
+	int ans=0;
+	vector <int> x[100010];
+	rep(i,n)cin >> h[i];
+	
+	rep(i,m){
+		int a,b;cin >> a >> b;
+		a--;b--;
+		x[a].pb(b);
+		x[b].pb(a);
+		//なんで、下の書き方だと動かないんだろうか......
+		// x[a-1].pb(b);
+		// x[b-1].pb(a);
+	}
 
-
+	rep(i,n){
+		bool flag=true;
+		fore(j, x[i]) if(h[i] <= h[j]) flag=false;
+			
+		if(flag)ans++;
+	}
+	cout << ans << endl;
 }
-

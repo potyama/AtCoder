@@ -7,13 +7,13 @@
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
 #define Rep(i, n) for (int i = 1; i <= (int)(n); i++)
 #define fore(i, a) for (auto &i:a)
+
 #define ll long long
 #define pll vector<pair<ll, ll>>
 #define mod 1000000007
 #define all(x) (x).begin(), (x).end()
 #define pb push_back
 #define popcount(x) __builtin_popcountll(x)
-
 using namespace std;
 
 const long double PI = acos(-1);
@@ -25,11 +25,10 @@ ll stringcount(string s, char c){return count(s.cbegin(), s.cend(), c);}
 bool isInteger(double x){return floor(x) == x;}
 
 int main(){
-	cin.tie(0);
-	ios::sync_with_stdio(false);
+    cin.tie(0);
+    ios::sync_with_stdio(false);
 
-	int N;cin >> N;
+    int A,B;cin >> A >> B;
 
-
+    cout << max(max((A+B),(A-B)),(A*B)) << endl;
 }
-
